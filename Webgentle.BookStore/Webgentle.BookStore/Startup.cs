@@ -26,6 +26,13 @@ namespace Webgentle.BookStore
                 app.UseDeveloperExceptionPage();
             }
 
+            //This is a custom middleware
+            //app.Use(async (context, next) =>
+            //{
+            //    await context.Response.WriteAsync("This is a custom middleware!\n");
+            //    await next();
+            //});
+
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>
